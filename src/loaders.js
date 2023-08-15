@@ -1,8 +1,9 @@
 import {baseUrl} from './base_url'
-export const cheeseLoader = async ()=>{
+export const cheesesLoader = async ()=>{
     const response = await fetch(`${baseUrl}/cheese`)
-    const cheese = await response.json()
-    return cheese
+    const cheeses = await response.json()
+    console.log(cheeses);
+    return cheeses
 }
 
 export const onecheeseLoader = async ({params})=>{
